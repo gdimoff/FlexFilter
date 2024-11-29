@@ -7,7 +7,7 @@ ext.deps = [
         'appcompat'          : "androidx.appcompat:appcompat:1.1.0",
         'javatest'           : "junit:junit:4.12",
         'androidtest'        : ["androidx.test.ext:junit:1.1.1", "androidx.test.espresso:espresso-core:3.2.0"],
-        'flexbox'            : "com.google.android:flexbox:1.1.1",
+        'flexbox'            : "com.google.android:flexbox:3.0.0",
         'androidxannotations': "androidx.annotation:annotation:1.1.0"
 ]
 
@@ -18,7 +18,7 @@ ext.configureModuleClosure = {
     apply plugin: 'com.android.library'
 
     apply plugin: 'com.github.dcendents.android-maven'
-    group = 'com.github.aefyr'
+    group = 'com.github.gdimoff'
     version = libversion
 
     android {
@@ -62,7 +62,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath 'com.android.tools.build:gradle:8.0.0'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
